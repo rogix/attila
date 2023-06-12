@@ -2,7 +2,15 @@
 <header class="blog-header {{#if @site.cover_image}} has-cover{{/if}}">
 	<div class="inner">
 		<div class="box blog-box">
-			<h1 class="blog-name">{{@site.title}}</h1>
+				{{#if @site.logo}}
+				<span class="logo">
+					<a href="{{@site.url}}" title="{{t "Home"}}"><img src="{{@site.logo}}" alt="{{t "Logo"}}" /></a>
+				</span>
+
+				{{else}}
+
+				<h1 class="blog-name">{{@site.title}}</h1>
+				{{/if}}
 			{{#if @site.description}}
 			<span class="blog-description">{{@site.description}}</span>
 			{{/if}}
