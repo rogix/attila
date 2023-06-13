@@ -895,7 +895,7 @@ textarea {
 	padding-top: calc(16rem + 4vw);
 
 	&.has-cover {
-		padding-top: calc(24rem + 8vw);
+		padding-top: calc(24rem + 2vw);
 		color: white;
 		background: black;
 		overflow: hidden;
@@ -916,7 +916,7 @@ textarea {
 
 	&.has-cover .blog-box {
 		border: none;
-		padding-bottom: calc(8rem + 4vw);
+		padding-bottom: calc(8rem + 9vw);
 	}
 }
 
